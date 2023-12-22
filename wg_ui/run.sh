@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Read options from options.json
-wg_host=$(jq --raw-output '.wg_host' /data/options.yaml)
-password=$(jq --raw-output '.password' /data/options.yaml)
+# wg_host=$(jq --raw-output '.wg_host' /data/options.yaml)
+# password=$(jq --raw-output '.password' /data/options.yaml)
 
 docker run -d \
   --name=wg-easy \
-  -e WG_HOST=${wg_host} \
-  -e PASSWORD=${password} \
+  -e WG_HOST=hass.firdene.co.uk \
+  -e PASSWORD=hikvisionANPR24! \
   -v ~/.wg-easy:/etc/wireguard \
   -p 51820:51820/udp \
   -p 51821:51821/tcp \
