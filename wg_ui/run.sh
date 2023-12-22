@@ -4,6 +4,8 @@
 # wg_host=$(jq --raw-output '.wg_host' /data/options.yaml)
 # password=$(jq --raw-output '.password' /data/options.yaml)
 
+echo "Connecting to a0d7b954-wireguard"
+
 docker run -d \
   --name=wg-easy \
   -e WG_HOST=a0d7b954-wireguard \
