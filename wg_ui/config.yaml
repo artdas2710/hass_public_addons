@@ -1,7 +1,7 @@
-name: "WireGuard UI"
-description: "WireGuard UI for VPN Server"
-version: "2.0.0"
-slug: "wireguard"
+name: "HASS wg-easy UI"
+description: "WireGuard UI (wg-easy) for VPN Server"
+version: "latest"
+slug: "wg_ui"
 init: false
 arch:
   - aarch64
@@ -9,6 +9,7 @@ arch:
   - armhf
   - armv7
   - i386
+image: ghcr.io/wg-easy/wg-easy
 ingress: true
 panels:
     name: "WireGuard VPN"
