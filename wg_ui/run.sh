@@ -6,7 +6,7 @@
 
 docker run -d \
   --name=wg-easy \
-  -e WG_HOST=addon_a0d7b954_wireguard \
+  -e WG_HOST=172.30.33.1 \
   -e PASSWORD=hikvisionANPR24! \
   -v ~/.wg-easy:/etc/wireguard \
   -p 51820:51820/udp \
