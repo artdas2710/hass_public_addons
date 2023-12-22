@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Read options from options.json
-wg_host=$(jq --raw-output '.wg_host' /data/options.json)
-password=$(jq --raw-output '.password' /data/options.json)
+wg_host=$(jq --raw-output '.wg_host' /data/options.yaml)
+password=$(jq --raw-output '.password' /data/options.yaml)
 
 docker run -d \
   --name=wg-easy \
