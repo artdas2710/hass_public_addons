@@ -1,6 +1,6 @@
 name: "HASS wg-easy UI"
 description: "WireGuard UI (wg-easy) for VPN Server"
-version: "9"
+version: "0.10 (testing)"
 slug: "wg_ui"
 init: false
 arch:
