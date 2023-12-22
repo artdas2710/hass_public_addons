@@ -11,7 +11,4 @@ arch:
   - i386
 image: ghcr.io/wg-easy/wg-easy
 ingress: true
-panels:
-    name: "WireGuard VPN"
-    icon: mdi:vpn
-    url: "http://localhost:51821"
+ingress_port: 51821
